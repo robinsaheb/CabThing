@@ -327,23 +327,6 @@ test = test.drop(['id', 'store_and_fwd_flag', 'pickup_datetime'], axis = 1)
 
 rf_model = RandomForestRegressor(n_estimators = 25, min_samples_leaf = 25, min_samples_split = 25)
 
-# Cross Validation.
-
-#from sklearn.model_selection import cross_val_score
-#from sklearn.metrics import make_scorer
-#
-#from sklearn.model_selection import cross_val_score
-#from sklearn.metrics import make_scorer
-#
-#def rmse_error(predicted, actual):
-#    return np.sqrt(np.mean(np.square(predicted - actual)))
-#
-#rmse = make_scorer(rmse_error, greater_is_better=False)
-#
-#from sklearn.metrics import mean_squared_error
-#scores =  -1.0 * cross_val_score(rf_model, train.values, target, scoring=rmse).mean()
-#print(scores)
-
 # Fitting The Model and Predicting The Data.
 
 rf_model.fit(train.values, target)
