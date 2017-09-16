@@ -22,8 +22,8 @@ from scipy.spatial.distance import euclidean , cityblock
 
 """ Load Data, remove obvious outliers and convert to sensible data. """
 
-train = pd.read_csv('/Users/sahebsingh/Documents/Projects/cabthing/train.csv')
-test = pd.read_csv('/Users/sahebsingh/Documents/Projects/cabthing/test.csv')
+train = pd.read_csv('/Users/sahebsingh/Documents/Projects/cabthing1/train.csv')
+test = pd.read_csv('/Users/sahebsingh/Documents/Projects/cabthing1/test.csv')
 #print(train.head(2))
 
 def topics(reader):
